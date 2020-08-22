@@ -37,7 +37,7 @@ jobs:
         # 创建仓库的API tokens， 用于自动创建不存在的仓库
         dst_token: ${{ secrets.GITEE_PRIVATE_TOKEN }}
         account_type: user
-        # 指定目录cache
+        white_list: "hub-mirror-action,scripts-1,scripts,QuantumultX-Tools,evilbutcher"
         # 强制更新
         force_update: true
         # clone方式，使用http、ssh方式进行clone
